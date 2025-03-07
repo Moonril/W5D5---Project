@@ -16,7 +16,7 @@ body {
 }
 
 
-.navbar-container, .header, .trending-main-container, footer {
+.navbar-container, .header, .trending-main-container, .main-container, footer {
     padding: 0 120px;
 }
 
@@ -149,7 +149,7 @@ h4 {
 
 .trending-article-card {
     display: flex;
-    width: 400px;
+    width: 500px;
 
 }
 
@@ -178,17 +178,18 @@ h5 {
     overflow: hidden;
     font-weight: 500;
     font-size: 0.9em;
+    margin: 10px 0;
 }
 
 h5 img {
     padding-right: 5px;
     border-radius: 50px;
-    width: 10%;
+    width: 30px;
 }
 
 h6 {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 
@@ -196,6 +197,8 @@ h6 {
     color: grey;
     display: flex;
     align-items: center;
+    font-size: 0.8em;
+    padding: 3px 0;
 }
 
 .reading-time img {
@@ -203,3 +206,71 @@ h6 {
 }
 
 /* section articles + aside */
+
+.main-container {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+/* articles */
+
+.articles-container {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card {
+    width: 900px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    flex: 80%;
+    padding-right: 30px;
+    position: relative;
+}
+
+div p {
+    font-size: 1.2em;
+    color: grey;
+}
+
+.genre-buttons {
+    background-color: rgb(250, 242, 242);
+    color: grey;
+    border: none;
+    border-radius: 50px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.article-pics {
+    flex: 20%;
+}
+
+.article-pics img {
+    width: 250px;
+}
+
+.bookmark {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+.bookmark img {
+    width: 35px;
+}
+
+
+/* aside */
+
+.aside {
+    padding: 0 50px;
+}
