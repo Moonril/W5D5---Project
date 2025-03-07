@@ -139,6 +139,7 @@ main {
 .trending-articles {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 h4 {
@@ -219,6 +220,7 @@ h6 {
     display: flex;
     padding-top: 50px;
     padding-bottom: 30px;
+    justify-content: space-around;
 }
 
 
@@ -231,11 +233,15 @@ h6 {
 }
 
 .article-card {
+/*     min-width: 500px;
+    max-width: 900px; */
     width: 900px;
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
 
 .article-content {
     flex: 80%;
@@ -283,6 +289,9 @@ div p {
     padding: 0 50px;
     display: flex;
     flex-direction: column;
+    /* position: sticky;
+    top: 10px;
+    z-index: 10; */
 }
 
 .aside-part-1 {
@@ -308,4 +317,97 @@ div p {
 
 .aside-part-2 {
     padding: 20px 0;
+    
 }
+
+
+/* ----------------------------------------------------- */
+
+/* TABLET 700? */
+
+@media screen /* and (min-width: 800px) */ and (max-width: 1200px)  {
+    
+    .navbar-container, .header, .trending-main-container, .main-container, footer {
+        padding: 0 50px;
+    }
+
+    .article-card {
+        width: 700px
+    }
+    
+    .trending-article-card {
+        display: flex;
+        width: 300px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .aside {
+        padding: 50px 0;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 20px;
+    }
+
+    .header p {
+        font-size: 1.1em;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    li:nth-child(1),
+    li:nth-child(2) {
+        display: none;
+    }
+}
+
+/*  */
+
+@media screen and (max-width: 700px) {
+    .article-card {
+            width: 550px;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+    } 
+    
+    svg {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    .header button {
+        margin-bottom: 20px;
+    }
+}
+
+/* MOBILE 576? */
+
+@media screen and (max-width: 577px) {
+
+    .navbar-container, .header, .trending-main-container, .main-container, footer {
+        padding: 0 20px;
+    }
+
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(4) {
+        display: none;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
