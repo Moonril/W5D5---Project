@@ -18,7 +18,15 @@ body {
     padding: 0 120px;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
 
+button {
+    cursor: pointer;
+}
 
 
 /* HEADER */
@@ -74,7 +82,9 @@ nav ul li {
     margin: 5px; 
 }
 
-
+nav ul li:hover {
+    text-decoration: underline;
+}
 
 /* .header */
 
@@ -201,6 +211,11 @@ h6 {
     font-size: 1.5em;
 }
 
+h6:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 .reading-time {
     color: grey;
@@ -289,8 +304,8 @@ div p {
     padding: 0 50px;
     display: flex;
     flex-direction: column;
-    /* position: sticky;
-    top: 10px;
+/*     position: sticky;
+    top: 60px;
     z-index: 10; */
 }
 
@@ -309,6 +324,15 @@ div p {
 
 .aside-buttons-genre {   
     border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.aside-buttons-genre:hover, .aside-buttons-bottom:hover {
+    background-color: white;
+    color: grey;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 7px 20px;
+    text-decoration: underline;
 }
 
 .aside-buttons-bottom {
@@ -398,9 +422,14 @@ div p {
         padding: 0 20px;
     }
 
+    .article-card {
+        width: 400px;
+
+    } 
+
     li:nth-child(1),
     li:nth-child(2),
-    li:nth-child(4) {
+    li:nth-child(3) {
         display: none;
     }
 
@@ -411,3 +440,10 @@ div p {
 
 }
 
+@media screen and (max-width: 400px) {
+    .article-card {
+            width: 350px;
+
+    } 
+
+}
