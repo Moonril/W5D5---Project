@@ -16,9 +16,11 @@ body {
 }
 
 
-.navbar-container, .header, main, footer {
+.navbar-container, .header, .trending-main-container, footer {
     padding: 0 120px;
 }
+
+
 
 
 /* HEADER */
@@ -76,6 +78,7 @@ nav ul li {
     padding-right: 0;
     justify-content: flex-end;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 
 .h1-container {
@@ -106,3 +109,97 @@ h1 {
     justify-content: flex-end;
     align-items: flex-end;
 } */
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* section trending */
+
+.trending-main-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.trending-articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.trending-title h4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.trending-title img {
+    margin-right: 5px;  
+}
+
+.trending-article-card {
+    display: flex;
+    width: 400px;
+
+}
+
+.trending-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgba(60, 196, 196, 0.582);
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.trending-number p {
+    /* align-self: flex-start; */ /* hmmmmmmmmmmmmm */
+} 
+
+.trending-text {
+    padding: 5px;
+    
+}
+
+h5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+h5 img {
+    padding-right: 5px;
+    border-radius: 50px;
+    width: 10%;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.reading-time {
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.reading-time img {
+    padding: 0 5px
+}
+
+/* section articles + aside */
