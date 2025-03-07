@@ -424,8 +424,28 @@ div p {
 
     .article-card {
         width: 400px;
+        display: flex;
+    }
 
-    } 
+    .article-content {
+        flex: 60%;
+    }
+
+    .article-pics {
+        flex: 40%;
+    }
+
+    .article-pics img {
+        width: 150px;
+    }
+
+    h6 {
+        font-size: 1.2em;
+    }
+
+    .article-content p {
+        font-size: 0.9em;
+    }
 
     li:nth-child(1),
     li:nth-child(2),
