@@ -7,8 +7,6 @@
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
-    /* background-image: url("../img/sfondo.png");
-    background-position: center center; */
   }
   
   * {
@@ -88,7 +86,7 @@ nav ul li {
 
 h1 {
     font-family: "Spectral", serif;
-    font-size: 3em;   /* adjust h1 size later */
+    font-size: 5em;   /* adjust h1 size later */
 }
 
 
@@ -99,6 +97,7 @@ h1 {
 .header p {
     font-size: 1.3em;
     margin: 20px 0;
+    color: black;
 }
 
 
@@ -273,4 +272,31 @@ div p {
 
 .aside {
     padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-part-1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 20px 0;
+}
+
+.aside-buttons-genre, .aside-buttons-bottom {
+    background-color: white;
+    color: grey;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 7px 20px;
+}
+
+.aside-buttons-genre {   
+    border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.aside-buttons-bottom {
+    border: none;
+}
+
+.aside-part-2 {
+    padding: 20px 0;
 }
