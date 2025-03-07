@@ -27,6 +27,7 @@ header {
     background-color: #ffc017;
     display: flex;
     flex-direction: column;
+/*     position: relative; */
 
 }
 
@@ -47,6 +48,14 @@ header {
 
     border-bottom: 1px solid black;
     height: 60px;
+
+    background-color: #ffc017;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+
+    transition: background-color 0.3s ease;
 }
 
 
